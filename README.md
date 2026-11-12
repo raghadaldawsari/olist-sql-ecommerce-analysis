@@ -3,6 +3,7 @@
 An end-to-end SQL analysis of a real Brazilian e-commerce marketplace (Olist): schema design, data import and cleaning, and seven business questions answered with SQL.
 
 **Tools:** MySQL 8, MySQL Workbench
+
 **SQL skills shown:** relational schema design (PK/FK), `LOAD DATA` with NULL handling, multi-table JOINs, CTEs, window functions (`LAG`, `NTILE`, `SUM() OVER`), conditional aggregation, `CASE`, `HAVING`
 
 ## Dataset
