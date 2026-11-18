@@ -147,6 +147,10 @@ Frequency is excluded on purpose because about 97% of customers ordered once. As
 - The dataset covers about two years, which limits repeat-purchase analysis.
 - The Q7 segments total 93,357 customers, one fewer than the 93,358 unique customers in Q6; one customer falls outside the segment rules.
 
+## AI use
+
+I used Claude to review the SQL logic and edit this README. I designed the analysis, ran all queries in MySQL, built the Power BI dashboard, and checked every figure against the query results.
+
 ## Author
 
 **Raghad Al-Dawsari** — Data Analyst
