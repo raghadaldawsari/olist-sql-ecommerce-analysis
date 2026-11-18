@@ -48,7 +48,7 @@ An end-to-end analysis of a real Brazilian e-commerce marketplace (Olist): schem
 3. Enable local infile: `SET GLOBAL local_infile = 1;` and add `OPT_LOCAL_INFILE=1` to the Workbench connection (Advanced > Others), then reconnect.
 4. Run `01_schema_and_import.sql`, then `02_analysis.sql`.
 
-**Expected results:** the import ends with a row-count check that should match the dataset table above. The analysis results should match the tables in the findings below (for example 7,661 late orders in Q4 and 93,358 unique customers in Q6).
+**Expected results:** the import ends with a row-count check that should match the dataset table above. The analysis results should match the tables in the findings below (for example 7,661 late orders with a review in Q4 and 93,358 unique customers in Q6).
 
 ## Data preparation notes
 
@@ -94,7 +94,7 @@ Growth is volatile but trending up through 2017, with strong months such as May 
 
 ![Delivery delay vs review score](images/delay_vs_rating.png)
 
-7,661 of 95,824 reviewed delivered orders (8.0%) arrived late, and those orders score about 1.7 points lower. This is a strong association, not proof of causation: product quality and seller issues may also play a role.
+Overall, 7,826 delivered orders (8.1%) arrived late, the figure shown on the dashboard. The table above covers the 95,824 delivered orders that have a review score, of which 7,661 were late; those late orders score about 1.7 points lower. This is a strong association, not proof of causation: product quality and seller issues may also play a role.
 
 ### 5. Late-delivery rate by state (states with 500+ orders)
 
